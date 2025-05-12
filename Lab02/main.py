@@ -14,7 +14,7 @@ import seaborn as sns
 train_path = "data/train.tsv.gz"
 dev_path = "data/dev_in.tsv"
 dev_labels_path = "data/dev_expected.tsv"
-test_path = "data/test_in.tsv"  # optional if you want test too
+test_path = "data/test_in.tsv"
 
 train = pd.read_csv(train_path, sep="\t", header=None, names=["label", "text"], on_bad_lines='skip')
 dev = pd.read_csv(dev_path, sep="\t", header=None, names=["text"], on_bad_lines='skip')
